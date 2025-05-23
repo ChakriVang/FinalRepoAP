@@ -1,9 +1,11 @@
 package test;
-public class Question {
-    String question, optionA, optionB, optionC, optionD, correctAnswer;
+
+
+public class Question extends BaseQuestion {
+    String optionA, optionB, optionC, optionD, correctAnswer;
 
     public Question(String question, String optionA, String optionB, String optionC, String optionD, String correctAnswer) {
-        this.question = question;
+        super(question);
         this.optionA = optionA;
         this.optionB = optionB;
         this.optionC = optionC;
@@ -11,3 +13,4 @@ public class Question {
         this.correctAnswer = correctAnswer;
     }
 }
+
